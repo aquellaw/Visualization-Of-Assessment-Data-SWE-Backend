@@ -1,0 +1,242 @@
+{
+  "S1": {
+    "description": " Program Development",
+    "M1": {
+      "description": " ETS Major Field Test",
+      "T1": {
+        "17-18": {
+          "target": 50,
+          "num_student": 26,
+          "num_student_met": 0,
+          "percentage": 66,
+          "description": "Group avg > 50%"
+        }
+      },
+      "T2": {
+        "17-18": {
+          "target": 100,
+          "num_student": 26,
+          "num_student_met": 21,
+          "percentage": 80,
+          "description": "80% of students >= 30 percentile"
+        }
+      }
+    },
+    "M2": {
+      "description": " Design-Problem Solving \u2013 Recall",
+      "T1": {
+        "17-18": {
+          "target": 90,
+          "num_student": 114,
+          "num_student_met": 79,
+          "percentage": 69,
+          "description": "recall most steps in design/algorithm"
+        }
+      },
+      "T2": {
+        "17-18": {
+          "target": 80,
+          "num_student": 114,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "recall all steps in design/algorithm"
+        }
+      }
+    },
+    "M3": {
+      "description": " Design-Problem Solving \u2013 Apply",
+      "T1": {
+        "17-18": {
+          "target": 80,
+          "num_student": 210,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "score 7-10"
+        }
+      },
+      "T2": {
+        "17-18": {
+          "target": 50,
+          "num_student": 210,
+          "num_student_met": 105,
+          "percentage": 50,
+          "description": "score 9-10"
+        }
+      }
+    },
+    "M14": {
+      "sescription": "Indirect Measures",
+      "T1": {
+        "17-18": {
+          "target": 70,
+          "num_student": 143,
+          "num_student_met": 101,
+          "percentage": 0,
+          "description": "good or excellent   in improvement"
+        }
+      }
+    }
+  },
+  "S2": {
+    "description": " Oral and Written Communication",
+    "M4": {
+      "description": " Seminar Presentations",
+      "T1": {
+        "17-18": {
+          "target": 100,
+          "num_student": 25,
+          "num_student_met": 25,
+          "percentage": 100,
+          "description": "improve or achieve 3 on slides"
+        }
+      },
+      "T2": {
+        "17-18": {
+          "target": 100,
+          "num_student": 25,
+          "num_student_met": 22,
+          "percentage": 84,
+          "description": "improve or achieve 3 on style"
+        }
+      }
+    },
+    "M5": {
+      "description": " Spelling, Grammar and Phrasing in Written Assignment ",
+      "T1": {
+        "17-18": {
+          "target": 80,
+          "num_student": 0,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "10+ on combined score"
+        }
+      }
+    },
+    "M6": {
+      "description": "  Writing \u2013 Description of a Structure or Algorithm",
+      "T1": {
+        "17-18": {
+          "target": 80,
+          "num_student": 0,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "score 7-10"
+        }
+      }
+    },
+    "M7": {
+      "description": " Software Engineering Presentation",
+      "T1": {
+        "17-18": {
+          "target": 80,
+          "num_student": 0,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "presentations 80-100%"
+        }
+      }
+    },
+    "M14": {
+      "sescription": "Indirect Measures",
+      "T1": {
+        "17-18": {
+          "target": 70,
+          "num_student": 44,
+          "num_student_met": 34,
+          "percentage": 0,
+          "description": "good or excellent   in improvement"
+        }
+      }
+    }
+  },
+  "S3": {
+    "description": " Working in Teams",
+    "M8": {
+      "description": " Peer Evaluation",
+      "T1": {
+        "17-18": {
+          "target": 90,
+          "num_student": 21,
+          "num_student_met": 17,
+          "percentage": 81,
+          "description": "contribute fairly to projects"
+        }
+      }
+    },
+    "M9": {
+      "description": " Objective Evaluation",
+      "T1": {
+        "17-18": {
+          "target": 90,
+          "num_student": 21,
+          "num_student_met": 13,
+          "percentage": 62,
+          "description": "contribute with score > 85%"
+        }
+      }
+    },
+    "M10": {
+      "description": " Partner Assignment",
+      "T1": {
+        "17-18": {
+          "target": 80,
+          "num_student": 0,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "contribute 30-50% with partner"
+        }
+      }
+    },
+    "M14": {
+      "sescription": "Indirect Measures",
+      "T1": {
+        "17-18": {
+          "target": 70,
+          "num_student": 0,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "good or excellent in improbement"
+        }
+      }
+    }
+  },
+  "S4": {
+    "description": " Understanding Issues in CS",
+    "M11": {
+      "description": " Review and Describe Issues Related to CS",
+      "T1": {
+        "17-18": {
+          "target": 75,
+          "num_student": 26,
+          "num_student_met": 18,
+          "percentage": 69,
+          "description": "score 4-5"
+        }
+      }
+    },
+    "M12": {
+      "description": " Compare/Contrast Solutions to CS Issues",
+      "T1": {
+        "17-18": {
+          "target": 75,
+          "num_student": 0,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "score 4-5"
+        }
+      }
+    },
+    "M14": {
+      "sescription": "Indirect Measures",
+      "T1": {
+        "17-18": {
+          "target": 70,
+          "num_student": 41,
+          "num_student_met": 36,
+          "percentage": 88,
+          "description": "good or excellent   in improvement"
+        }
+      }
+    }
+  }
+}
