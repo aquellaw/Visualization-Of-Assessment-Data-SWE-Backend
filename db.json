@@ -7,9 +7,37 @@
         "17-18": {
           "target": 50,
           "num_student": 26,
-          "num_student_met": 0,
+          "num_student_met": 18,
           "percentage": 66,
           "description": "Group avg > 50%"
+        },
+        "18-19": {
+          "target": 50,
+          "num_student": 26,
+          "num_student_met": 10,
+          "percentage": 0,
+          "description": "Group avg < 50%"
+        },
+        "19-20": {
+          "target": 50,
+          "num_student": 26,
+          "num_student_met": 24,
+          "percentage": 0,
+          "description": "Group avg > 50%"
+        },
+        "20-21": {
+          "target": 50,
+          "num_student": 26,
+          "num_student_met": 13,
+          "percentage": 50,
+          "description": "Group avg >= 50%"
+        },
+        "21-22": {
+          "target": 100,
+          "num_student": 26,
+          "num_student_met": 6,
+          "percentage": 0,
+          "description": "students >= 30 percentile"
         }
       },
       "T2": {
@@ -18,7 +46,35 @@
           "num_student": 26,
           "num_student_met": 21,
           "percentage": 80,
-          "description": "80% of students >= 30 percentile"
+          "description": "students <= 30 percentile"
+        },
+        "18-19": {
+          "target": 100,
+          "num_student": 26,
+          "num_student_met": 26,
+          "percentage": 0,
+          "description": "100% of students >= 30 percentile"
+        },
+        "19-20": {
+          "target": 100,
+          "num_student": 26,
+          "num_student_met": 2,
+          "percentage": 66,
+          "description": "students <= 30 percentile"
+        },
+        "20-21": {
+          "target": 100,
+          "num_student": 26,
+          "num_student_met": 10,
+          "percentage": 66,
+          "description": "students <= 30 percentile"
+        },
+        "21-22": {
+          "target": 40,
+          "num_student": 15,
+          "num_student_met": 15,
+          "percentage": 0,
+          "description": "students >= 30 percentile"
         }
       }
     },
@@ -31,6 +87,34 @@
           "num_student_met": 79,
           "percentage": 69,
           "description": "recall most steps in design/algorithm"
+        },
+        "18-19": {
+          "target": 90,
+          "num_student": 114,
+          "num_student_met": 100,
+          "percentage": 0,
+          "description": "recall most steps in design/algorithm"
+        },
+        "19-20": {
+          "target": 90,
+          "num_student": 114,
+          "num_student_met": 2,
+          "percentage": 0,
+          "description": "recall most steps in design/algorithm"
+        },
+        "20-21": {
+          "target": 90,
+          "num_student": 114,
+          "num_student_met": 10,
+          "percentage": 0,
+          "description": "recall most steps in design/algorithm"
+        },
+        "21-22": {
+          "target": 90,
+          "num_student": 114,
+          "num_student_met": 15,
+          "percentage": 13.04,
+          "description": "recall most steps in design/algorithm"
         }
       },
       "T2": {
@@ -40,6 +124,34 @@
           "num_student_met": 0,
           "percentage": 0,
           "description": "recall all steps in design/algorithm"
+        },
+        "18-19": {
+          "target": 80,
+          "num_student": 114,
+          "num_student_met": 26,
+          "percentage": 0,
+          "description": "recall all steps in design/algorithm"
+        },
+        "19-20": {
+          "target": 80,
+          "num_student": 114,
+          "num_student_met": 114,
+          "percentage": 100,
+          "description": "recall all steps in design/algorithm"
+        },
+        "20-21": {
+          "target": 80,
+          "num_student": 114,
+          "num_student_met": 91,
+          "percentage": 80,
+          "description": "recall all steps in design/algorithm"
+        },
+        "21-22": {
+          "target": 80,
+          "num_student": 0,
+          "num_student_met": 0,
+          "percentage": 80,
+          "description": "recall all steps in design/algorithm"
         }
       }
     },
@@ -47,6 +159,34 @@
       "description": " Design-Problem Solving \u2013 Apply",
       "T1": {
         "17-18": {
+          "target": 80,
+          "num_student": 210,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "score 7-10"
+        },
+        "18-19": {
+          "target": 80,
+          "num_student": 210,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "score 7-10"
+        },
+        "19-20": {
+          "target": 80,
+          "num_student": 210,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "score 7-10"
+        },
+        "20-21": {
+          "target": 80,
+          "num_student": 210,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "score 7-10"
+        },
+        "21-22": {
           "target": 80,
           "num_student": 210,
           "num_student_met": 0,
@@ -61,6 +201,34 @@
           "num_student_met": 105,
           "percentage": 50,
           "description": "score 9-10"
+        },
+        "18-19": {
+          "target": 50,
+          "num_student": 210,
+          "num_student_met": 100,
+          "percentage": 0,
+          "description": "score 9-10"
+        },
+        "19-20": {
+          "target": 50,
+          "num_student": 210,
+          "num_student_met": 105,
+          "percentage": 50,
+          "description": "score 9-10"
+        },
+        "20-21": {
+          "target": 70,
+          "num_student": 210,
+          "num_student_met": 100,
+          "percentage": 0,
+          "description": "score 9-10"
+        },
+        "21-22": {
+          "target": 50,
+          "num_student": 210,
+          "num_student_met": 100,
+          "percentage": 0,
+          "description": "score 9-10"
         }
       }
     },
@@ -71,6 +239,34 @@
           "target": 70,
           "num_student": 143,
           "num_student_met": 101,
+          "percentage": 0,
+          "description": "good or excellent   in improvement"
+        },
+        "18-19": {
+          "target": 70,
+          "num_student": 143,
+          "num_student_met": 5,
+          "percentage": 0,
+          "description": "good or excellent   in improvement"
+        },
+        "19-20": {
+          "target": 70,
+          "num_student": 143,
+          "num_student_met": 143,
+          "percentage": 0,
+          "description": "good or excellent   in improvement"
+        },
+        "20-21": {
+          "target": 70,
+          "num_student": 143,
+          "num_student_met": 90,
+          "percentage": 0,
+          "description": "good or excellent   in improvement"
+        },
+        "21-22": {
+          "target": 70,
+          "num_student": 143,
+          "num_student_met": 120,
           "percentage": 0,
           "description": "good or excellent   in improvement"
         }
@@ -88,10 +284,66 @@
           "num_student_met": 25,
           "percentage": 100,
           "description": "improve or achieve 3 on slides"
+        },
+        "18-19": {
+          "target": 100,
+          "num_student": 25,
+          "num_student_met": 15,
+          "percentage": 0,
+          "description": "improve or achieve 3 on slides"
+        },
+        "19-20": {
+          "target": 70,
+          "num_student": 25,
+          "num_student_met": 18,
+          "percentage": 70,
+          "description": "improve or achieve 3 on slides"
+        },
+        "20-21": {
+          "target": 100,
+          "num_student": 25,
+          "num_student_met": 26,
+          "percentage": 0,
+          "description": "improve or achieve 3 on slides"
+        },
+        "21-22": {
+          "target": 100,
+          "num_student": 25,
+          "num_student_met": 26,
+          "percentage": 100,
+          "description": "improve or achieve 3 on slides"
         }
       },
       "T2": {
         "17-18": {
+          "target": 100,
+          "num_student": 25,
+          "num_student_met": 22,
+          "percentage": 84,
+          "description": "improve or achieve 3 on style"
+        },
+        "18-19": {
+          "target": 100,
+          "num_student": 25,
+          "num_student_met": 22,
+          "percentage": 84,
+          "description": "improve or achieve 3 on style"
+        },
+        "19-20": {
+          "target": 70,
+          "num_student": 25,
+          "num_student_met": 18,
+          "percentage": 70,
+          "description": "improve or achieve 3 on slides"
+        },
+        "20-21": {
+          "target": 100,
+          "num_student": 25,
+          "num_student_met": 22,
+          "percentage": 10,
+          "description": "improve or achieve 3 on style"
+        },
+        "21-22": {
           "target": 100,
           "num_student": 25,
           "num_student_met": 22,
@@ -109,6 +361,34 @@
           "num_student_met": 0,
           "percentage": 0,
           "description": "10+ on combined score"
+        },
+        "18-19": {
+          "target": 60,
+          "num_student": 30,
+          "num_student_met": 1,
+          "percentage": 0,
+          "description": "10+ on combined score"
+        },
+        "19-20": {
+          "target": 55,
+          "num_student": 26,
+          "num_student_met": 15,
+          "percentage": 0,
+          "description": "10+ on combined score"
+        },
+        "20-21": {
+          "target": 80,
+          "num_student": 0,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "10+ on combined score"
+        },
+        "21-22": {
+          "target": 44,
+          "num_student": 0,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "10+ on combined score"
         }
       }
     },
@@ -117,8 +397,36 @@
       "T1": {
         "17-18": {
           "target": 80,
+          "num_student": 26,
+          "num_student_met": 27,
+          "percentage": 0,
+          "description": "score 7-10"
+        },
+        "18-19": {
+          "target": 30,
+          "num_student": 60,
+          "num_student_met": 20,
+          "percentage": 18,
+          "description": "score 7-10"
+        },
+        "19-20": {
+          "target": 30,
+          "num_student": 28,
+          "num_student_met": 28,
+          "percentage": 100,
+          "description": "score 7-10"
+        },
+        "20-21": {
+          "target": 70,
           "num_student": 0,
           "num_student_met": 0,
+          "percentage": 0,
+          "description": "score 7-10"
+        },
+        "21-22": {
+          "target": 70,
+          "num_student": 30,
+          "num_student_met": 25,
           "percentage": 0,
           "description": "score 7-10"
         }
@@ -128,6 +436,34 @@
       "description": " Software Engineering Presentation",
       "T1": {
         "17-18": {
+          "target": 80,
+          "num_student": 0,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "presentations 80-100%"
+        },
+        "18-19": {
+          "target": 70,
+          "num_student": 25,
+          "num_student_met": 25,
+          "percentage": 100,
+          "description": "presentations 80-100%"
+        },
+        "19-20": {
+          "target": 80,
+          "num_student": 25,
+          "num_student_met": 15,
+          "percentage": 0,
+          "description": "presentations 80-100%"
+        },
+        "20-21": {
+          "target": 75,
+          "num_student": 0,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "presentations 80-100%"
+        },
+        "21-22": {
           "target": 80,
           "num_student": 0,
           "num_student_met": 0,
@@ -143,6 +479,34 @@
           "target": 70,
           "num_student": 44,
           "num_student_met": 34,
+          "percentage": 0,
+          "description": "good or excellent   in improvement"
+        },
+        "18-19": {
+          "target": 60,
+          "num_student": 30,
+          "num_student_met": 1,
+          "percentage": 0,
+          "description": "good or excellent   in improvement"
+        },
+        "19-20": {
+          "target": 55,
+          "num_student": 26,
+          "num_student_met": 15,
+          "percentage": 0,
+          "description": "good or excellent   in improvement"
+        },
+        "20-21": {
+          "target": 80,
+          "num_student": 0,
+          "num_student_met": 0,
+          "percentage": 0,
+          "description": "good or excellent   in improvement"
+        },
+        "21-22": {
+          "target": 44,
+          "num_student": 0,
+          "num_student_met": 0,
           "percentage": 0,
           "description": "good or excellent   in improvement"
         }
