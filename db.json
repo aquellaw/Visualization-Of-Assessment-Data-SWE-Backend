@@ -31,14 +31,15 @@
           "num_student_met": 13,
           "percentage": 50,
           "description": "Group avg >= 50%"
-        },
-        "21-22": {
-          "target": 100,
-          "num_student": 26,
-          "num_student_met": 6,
-          "percentage": 0,
-          "description": "students >= 30 percentile"
         }
+        // ,
+        // "21-22": {
+        //   "target": 100,
+        //   "num_student": 26,
+        //   "num_student_met": 6,
+        //   "percentage": 0,
+        //   "description": "students >= 30 percentile"
+        // }
       },
       "T2": {
         "17-18": {
@@ -68,14 +69,15 @@
           "num_student_met": 10,
           "percentage": 66,
           "description": "students <= 30 percentile"
-        },
-        "21-22": {
-          "target": 40,
-          "num_student": 15,
-          "num_student_met": 15,
-          "percentage": 0,
-          "description": "students >= 30 percentile"
         }
+        // ,
+        // "21-22": {
+        //   "target": 40,
+        //   "num_student": 15,
+        //   "num_student_met": 15,
+        //   "percentage": 0,
+        //   "description": "students >= 30 percentile"
+        // }
       }
     },
     "M2": {
@@ -108,14 +110,14 @@
           "num_student_met": 10,
           "percentage": 0,
           "description": "recall most steps in design/algorithm"
-        },
-        "21-22": {
-          "target": 90,
-          "num_student": 114,
-          "num_student_met": 15,
-          "percentage": 13.04,
-          "description": "recall most steps in design/algorithm"
         }
+        //, "21-22": {
+        //   "target": 90,
+        //   "num_student": 114,
+        //   "num_student_met": 15,
+        //   "percentage": 13.04,
+        //   "description": "recall most steps in design/algorithm"
+        // }
       },
       "T2": {
         "17-18": {
@@ -145,14 +147,14 @@
           "num_student_met": 91,
           "percentage": 80,
           "description": "recall all steps in design/algorithm"
-        },
-        "21-22": {
-          "target": 80,
-          "num_student": 0,
-          "num_student_met": 0,
-          "percentage": 80,
-          "description": "recall all steps in design/algorithm"
         }
+        // ,"21-22": {
+        //   "target": 80,
+        //   "num_student": 0,
+        //   "num_student_met": 0,
+        //   "percentage": 80,
+        //   "description": "recall all steps in design/algorithm"
+        // }
       }
     },
     "M3": {
@@ -185,14 +187,15 @@
           "num_student_met": 0,
           "percentage": 0,
           "description": "score 7-10"
-        },
-        "21-22": {
-          "target": 80,
-          "num_student": 210,
-          "num_student_met": 0,
-          "percentage": 0,
-          "description": "score 7-10"
         }
+        // ,
+        // "21-22": {
+        //   "target": 80,
+        //   "num_student": 210,
+        //   "num_student_met": 0,
+        //   "percentage": 0,
+        //   "description": "score 7-10"
+        // }
       },
       "T2": {
         "17-18": {
@@ -222,18 +225,19 @@
           "num_student_met": 100,
           "percentage": 0,
           "description": "score 9-10"
-        },
-        "21-22": {
-          "target": 50,
-          "num_student": 210,
-          "num_student_met": 100,
-          "percentage": 0,
-          "description": "score 9-10"
         }
+      //   ,
+      //   "21-22": {
+      //     "target": 50,
+      //     "num_student": 210,
+      //     "num_student_met": 100,
+      //     "percentage": 0,
+      //     "description": "score 9-10"
+      //   }
       }
     },
     "M14": {
-      "sescription": "Indirect Measures",
+      "description": "Indirect Measures",
       "T1": {
         "17-18": {
           "target": 70,
@@ -262,14 +266,15 @@
           "num_student_met": 90,
           "percentage": 0,
           "description": "good or excellent   in improvement"
-        },
-        "21-22": {
-          "target": 70,
-          "num_student": 143,
-          "num_student_met": 120,
-          "percentage": 0,
-          "description": "good or excellent   in improvement"
         }
+        // ,
+        // "21-22": {
+        //   "target": 70,
+        //   "num_student": 143,
+        //   "num_student_met": 120,
+        //   "percentage": 0,
+        //   "description": "good or excellent   in improvement"
+        // }
       }
     }
   },
@@ -305,14 +310,15 @@
           "num_student_met": 26,
           "percentage": 0,
           "description": "improve or achieve 3 on slides"
-        },
-        "21-22": {
-          "target": 100,
-          "num_student": 25,
-          "num_student_met": 26,
-          "percentage": 100,
-          "description": "improve or achieve 3 on slides"
         }
+        // ,
+        // "21-22": {
+        //   "target": 100,
+        //   "num_student": 25,
+        //   "num_student_met": 26,
+        //   "percentage": 100,
+        //   "description": "improve or achieve 3 on slides"
+        // }
       },
       "T2": {
         "17-18": {
@@ -382,14 +388,15 @@
           "num_student_met": 0,
           "percentage": 0,
           "description": "10+ on combined score"
-        },
-        "21-22": {
-          "target": 44,
-          "num_student": 0,
-          "num_student_met": 0,
-          "percentage": 0,
-          "description": "10+ on combined score"
         }
+        // ,
+        // "21-22": {
+        //   "target": 44,
+        //   "num_student": 0,
+        //   "num_student_met": 0,
+        //   "percentage": 0,
+        //   "description": "10+ on combined score"
+        // }
       }
     },
     "M6": {
@@ -422,14 +429,15 @@
           "num_student_met": 0,
           "percentage": 0,
           "description": "score 7-10"
-        },
-        "21-22": {
-          "target": 70,
-          "num_student": 30,
-          "num_student_met": 25,
-          "percentage": 0,
-          "description": "score 7-10"
         }
+        // ,
+        // "21-22": {
+        //   "target": 70,
+        //   "num_student": 30,
+        //   "num_student_met": 25,
+        //   "percentage": 0,
+        //   "description": "score 7-10"
+        // }
       }
     },
     "M7": {
@@ -462,14 +470,15 @@
           "num_student_met": 0,
           "percentage": 0,
           "description": "presentations 80-100%"
-        },
-        "21-22": {
-          "target": 80,
-          "num_student": 0,
-          "num_student_met": 0,
-          "percentage": 0,
-          "description": "presentations 80-100%"
         }
+        // ,
+        // "21-22": {
+        //   "target": 80,
+        //   "num_student": 0,
+        //   "num_student_met": 0,
+        //   "percentage": 0,
+        //   "description": "presentations 80-100%"
+        // }
       }
     },
     "M14": {
@@ -502,14 +511,15 @@
           "num_student_met": 0,
           "percentage": 0,
           "description": "good or excellent   in improvement"
-        },
-        "21-22": {
-          "target": 44,
-          "num_student": 0,
-          "num_student_met": 0,
-          "percentage": 0,
-          "description": "good or excellent   in improvement"
         }
+        // ,
+        // "21-22": {
+        //   "target": 44,
+        //   "num_student": 0,
+        //   "num_student_met": 0,
+        //   "percentage": 0,
+        //   "description": "good or excellent   in improvement"
+        // }
       }
     }
   },
