@@ -68,7 +68,7 @@ def get_all_target_values(slo,measure,target_type):
 
     return target_values
 
-# print("All target values:",get_all_target_values("S1","M1","T1"))
+print("All target values:",get_all_target_values("S1","M1","T1"))
 
 
 def get_all_percentage_met_values(slo,measure,target_type):
@@ -101,7 +101,7 @@ def get_all_percentage_met_values(slo,measure,target_type):
 
     return percentage_met_values
 
-# print("These are the percentage met values:",get_all_percentage_met_values("S1","M1","T1"))
+print("These are the percentage met values:",get_all_percentage_met_values("S1","M1","T1"))
 
 def get_most_recent_target_description(slo, measure, target_type):
 
@@ -191,6 +191,10 @@ async def get_all_measure_dates(slo,measure):
 
     return dates
 
+#create a function that checks to see if a date exists in db
+#existingDates(): -> bool?
+
+
 
 #choose remainder of dates 
 #includes start date
@@ -221,8 +225,6 @@ async def get_all_targets(slo:str,measure:str):
 
     for target in targets_objs:
         targets.append(target)
-
-    
 
     return targets
 
@@ -275,3 +277,6 @@ async def get_plot_data(slo:str,measure:str,start_date:str,end_date:str):
     }
 
     return plot_data
+
+#create endpoint to save data. Parameter should be an object
+#create enpoint to edit data. Parameter should be an object
