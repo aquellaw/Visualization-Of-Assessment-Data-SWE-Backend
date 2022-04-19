@@ -278,5 +278,33 @@ async def get_plot_data(slo:str,measure:str,start_date:str,end_date:str):
 
     return plot_data
 
+# Endpoint to return states the database is in for a 
+# specific SLO, Measure, and Year into an array.
+#
+# State options include the following:
+#   "Add T1"
+#   "Edit T1"
+#   "Add T2"
+#   "Edit T2"
+# So could be the following options
+@app.get("/input/options/{slo}/{measure}/{date}")
+def get_state(slo:str, measure:str, date:str):
+    states = []             # to hold all state options
+    slo = slo.upper()
+    measure = measure.upper()
+
+    # Check Add T1, Check Edit T1
+    if date in dict_db[slo][measure]["T1"]:
+        states.append("Edit T1")
+    else:
+        states.append("Add T1")
+    
+    # Check Add T2, Check Edit T2
+    if "T2" in dict_db[slo][measure]:
+        if date in dict_db[slo][measure]["T2"]:
+            states.append("Edit T2")
+        else:
+            states.append("Add T2")
+
 #create endpoint to save data. Parameter should be an object
 #create enpoint to edit data. Parameter should be an object
