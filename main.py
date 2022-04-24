@@ -1,3 +1,4 @@
+from urllib.request import Request
 from  rich import print
 from pymongo import MongoClient
 import json
@@ -34,8 +35,9 @@ mycol = db['Student Learning Objectives']
 
 #Deletes all documetns in the collection
 # mycol.delete_many({})
+
 mycol.insert_one(data)
-print("The number of documents in mycol:", mycol.count_documents({}))
+# print("The number of documents in mycol:", mycol.count_documents({}))
 
 dict_db = mycol.find_one()
 
@@ -68,8 +70,6 @@ def get_all_target_values(slo,measure,target_type):
 
     return target_values
 
-print("All target values:",get_all_target_values("S1","M1","T1"))
-
 
 def get_all_percentage_met_values(slo,measure,target_type):
     percentage_met_values = []
@@ -101,7 +101,6 @@ def get_all_percentage_met_values(slo,measure,target_type):
 
     return percentage_met_values
 
-print("These are the percentage met values:",get_all_percentage_met_values("S1","M1","T1"))
 
 def get_most_recent_target_description(slo, measure, target_type):
 
@@ -124,7 +123,7 @@ def get_most_recent_target_description(slo, measure, target_type):
     return most_recent_target_description
 
 
-def create_plot_title_multi_target(slo,measure):
+def create_plot_title_multi_target(slo,measure, dict_db):
 
     slo_description = dict_db[slo]["description"]
     get_measure_description = dict_db[slo][measure]["description"]
@@ -133,9 +132,16 @@ def create_plot_title_multi_target(slo,measure):
 
     return title
 
-# @app.get("/")
-# async def root():
-#     return {"message": "Hello World"}
+
+def has_current_date(slo:str, measure:str, target:str, date:str, dict_db):
+    if date in dict_db[slo][measure][target]:
+        return True
+    return False
+
+
+# ************************************************************************************************
+#
+# ************************************************************************************************
 
 
 @app.post("/slo/all")
@@ -149,14 +155,11 @@ async def get_slo_descritpion(slo):
     slo_description = dict_db[slo]["description"]
     return slo_description
 
-
-
 @app.post("/measure/{slo}")
 async def get_measure(slo):
     slo = slo.upper()
     measures = [measure for measure in dict_db[slo]]
     return measures
-
 
 @app.get("/measure/description/{slo}/{measure}")
 async def get_measure_description(slo, measure):
@@ -166,8 +169,6 @@ async def get_measure_description(slo, measure):
     measure_description = dict_db[slo][measure]["description"]
 
     return measure_description
-
-
 
 @app.get("/dates/{slo}/{measure}")
 async def get_all_measure_dates(slo,measure):
@@ -190,11 +191,6 @@ async def get_all_measure_dates(slo,measure):
     
 
     return dates
-
-#create a function that checks to see if a date exists in db
-#existingDates(): -> bool?
-
-
 
 #choose remainder of dates 
 #includes start date
@@ -228,9 +224,7 @@ async def get_all_targets(slo:str,measure:str):
 
     return targets
 
-
 @app.get("/result/{slo}/{measure}/{target}")
-#Check documentation to change end point description
 def get_target_description(slo:str,measure:str,target:str,date:str):
     slo = slo.upper()
     measure = measure.upper()
@@ -238,7 +232,6 @@ def get_target_description(slo:str,measure:str,target:str,date:str):
     
     result_summary = dict_db[slo][measure][target][date]["description"]
     return result_summary
-
 
 @app.get("/plot")
 async def get_plot_data(slo:str,measure:str,start_date:str,end_date:str):
@@ -288,7 +281,7 @@ async def get_plot_data(slo:str,measure:str,start_date:str,end_date:str):
 #   "Edit T2"
 # So could be the following options
 @app.get("/input/options/{slo}/{measure}/{date}")
-def get_state(slo:str, measure:str, date:str):
+async def get_state(slo:str, measure:str, date:str):
     states = []             # to hold all state options
     slo = slo.upper()
     measure = measure.upper()
@@ -305,6 +298,46 @@ def get_state(slo:str, measure:str, date:str):
             states.append("Edit T2")
         else:
             states.append("Add T2")
+    return states
 
 #create endpoint to save data. Parameter should be an object
-#create enpoint to edit data. Parameter should be an object
+#Need an enpoint that adds new data for a specific date for both targets
+@app.post("/input/{slo}/{measure}/{target}/{date}")
+async def add_new_slo_data(slo:str, measure:str, target:str, date:str, information: Request):
+    
+    slo=slo.upper()
+    measure = measure.upper()
+    data = await information.json()
+
+    #Return true or false
+    if has_current_date(slo,measure,target,date,dict_db) == True:
+        return{
+            "status":"FAILED the data was not stored; data on this date already exists",
+            "data": data
+        }
+    else:
+        dict_db[slo][measure][target][date] = data
+        return{
+            "status": "SUCCESS the data was stored",
+            "data": data
+        }
+
+#End point allows user to edit data
+@app.put("/edit/{slo}/{measure}/{target}/{date}")
+async def edit_slo_data(slo:str, measure:str, target:str, date:str, information: Request):
+    
+    slo=slo.upper()
+    measure = measure.upper()
+    data = await information.json()
+
+    if has_current_date(slo,measure,target,date,dict_db) == False:
+        return{
+            "status":"FAILED the entry for this date does not exist",
+            "data": data
+        }
+    else:
+        dict_db[slo][measure][target][date] = data
+        return{
+            "status": "SUCCESS the data was edited",
+            "data": data
+        }
